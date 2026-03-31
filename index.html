@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Girly Tic Tac Toe ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1 class="title">✨ Tic Tac Toe ✨</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="player-x">💖 Player X</span>
+                    <span class="score" id="scoreX">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="player-o">💜 Player O</span>
+                    <span class="score" id="scoreO">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <div class="current-player" id="currentPlayer">
+                Current Player: <span class="player-turn">💖 X</span>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button class="btn btn-primary" id="resetBtn">🔄 New Game</button>
+            <button class="btn btn-secondary" id="resetScoreBtn">📊 Reset Score</button>
+        </div>
+
+        <div class="modal" id="gameModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Game Over!</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="modalMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="modalPlayAgain">🎮 Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-hearts">
+            <div class="heart">💕</div>
+            <div class="heart">💖</div>
+            <div class="heart">💗</div>
+            <div class="heart">💝</div>
+            <div class="heart">💕</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
